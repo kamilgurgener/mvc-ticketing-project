@@ -15,8 +15,6 @@ public class CreateController {
 
         model.addAttribute("user", new UserDTO());
 
-
-
         return "/user/create";
     }
 
