@@ -3,9 +3,11 @@ package com.cydeo.mvcticketingproject.service.impl;
 import com.cydeo.mvcticketingproject.dto.RoleDTO;
 import com.cydeo.mvcticketingproject.dto.UserDTO;
 import com.cydeo.mvcticketingproject.service.UserService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class UserServiceImpl extends AbstractMapService<UserDTO, String> implements UserService {
 
     @Override
