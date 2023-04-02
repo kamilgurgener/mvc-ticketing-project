@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
-
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
@@ -20,7 +19,6 @@ public class ProjectDTO {
     private LocalDate endDate;
     private String projectDetail;
     private Status projectStatus;
-
 
 
 }
