@@ -36,16 +36,16 @@
                                         <div class="row">
                                             <div class="col">
                                                 <div class="form-group">
-                                                    <label for="projectname" class="col-form-label">Project Name</label>
-                                                    <input id="projectname" type="text" class="form-control" placeholder="project name">
+                                                    <label for="projectname" class="col-form-label" >Project Name</label>
+                                                    <input id="projectname" type="text" class="form-control" placeholder="project name" th:field="*{projectName}">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col">
                                                 <div class="form-group">
-                                                    <label for="projectcode" class="col-form-label">Project Code</label>
-                                                    <input id="projectcode" type="text" class="form-control" placeholder="project code">
+                                                    <label for="projectcode" class="col-form-label" >Project Code</label>
+                                                    <input id="projectcode" type="text" class="form-control" placeholder="project code" th:field="*{projectCode}">
                                                 </div>
                                             </div>
                                         </div>
@@ -62,21 +62,21 @@
                                         <div class="row">
                                             <div class="col">
                                                 <div class="form-group">
-                                                    <label for="startdate">Project Start Date</label>
-                                                    <input id="startdate" type="date" class="form-control">
+                                                    <label for="startdate" >Project Start Date</label>
+                                                    <input id="startdate" type="date" class="form-control" th:field="*{startDate}">
                                                 </div>
                                             </div>
                                             <div class="col">
                                                 <div class="form-group">
-                                                    <label for="enddate">Project End Date</label>
-                                                    <input id="enddate" type="date" class="form-control">
+                                                    <label for="enddate" >Project End Date</label>
+                                                    <input id="enddate" type="date" class="form-control" th:field="*{endDate}">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col">
                                                 <div class="form-group">
-                                                    <label for="projectdetail">Project Detail</label>
+                                                    <label for="projectdetail" th:field="*{projectDetail}">Project Detail</label>
                                                     <textarea id="projectdetail" class="form-control" placeholder="project detail"></textarea>
                                                 </div>
                                             </div>
