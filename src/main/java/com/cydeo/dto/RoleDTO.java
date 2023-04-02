@@ -1,12 +1,12 @@
-package com.cydeo.mvcticketingproject.dto;
+package com.cydeo.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
 public class RoleDTO {
 
     private Long id;

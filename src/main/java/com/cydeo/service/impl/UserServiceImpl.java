@@ -1,18 +1,17 @@
-package com.cydeo.mvcticketingproject.service.impl;
+package com.cydeo.service.impl;
 
-import com.cydeo.mvcticketingproject.dto.RoleDTO;
-import com.cydeo.mvcticketingproject.dto.UserDTO;
-import com.cydeo.mvcticketingproject.service.UserService;
+import com.cydeo.dto.UserDTO;
+import com.cydeo.service.UserService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class UserServiceImpl extends AbstractMapService<UserDTO, String> implements UserService {
+public class UserServiceImpl extends AbstractMapService<UserDTO,String> implements UserService {
 
     @Override
     public UserDTO save(UserDTO object) {
-        return super.save(object.getUserName(), object);
+        return super.save(object.getUserName(),object);
     }
 
     @Override
@@ -23,6 +22,11 @@ public class UserServiceImpl extends AbstractMapService<UserDTO, String> impleme
     @Override
     public void deleteById(String id) {
         super.deleteById(id);
+    }
+
+    @Override
+    public void update(UserDTO object) {
+        super.update(object.getUserName(),object);
     }
 
     @Override
