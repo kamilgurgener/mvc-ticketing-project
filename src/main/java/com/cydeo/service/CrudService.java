@@ -1,5 +1,7 @@
 package com.cydeo.service;
 
+import com.cydeo.dto.ProjectDTO;
+
 import java.util.List;
 
 public interface CrudService<T,ID> {
@@ -9,4 +11,6 @@ public interface CrudService<T,ID> {
      T findById(ID id);
      void deleteById(ID id);
      void update(T object);
+
+
 }
